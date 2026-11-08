@@ -68,7 +68,7 @@ public class SocketCounter : MonoBehaviour
 		label.text = $"Piezas: {filled}/{sockets.Length}";
 		// SetActive(true) muestra el premio y SetActive(false) lo esconde:
 		// solo se ve cuando todos los sockets están llenos.
-		bool allFull = filled == sockets.Length;
+		bool allFull = filled != sockets.Length;
 		reward.SetActive(allFull);
 	}
 }
